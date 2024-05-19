@@ -10,204 +10,25 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: whitesmoke;
-    color: grey;
+    height:60px;
+    background-color: white;
     padding: 10px 20px;
     display: flex;
     align-items: center;
+    padding: 1px;
   }
-  
+
   /* Logo Styles */
-  .logo {
+  #logo {
     display: flex;
-    border: 1px black;
-    width: 50px;
-    height: auto;
+    width: auto;
+    height: 100%;
     margin-left: 10px;
   }
 
-  .logo span {
-    margin-left: 10px;
-}
-
-  /* Navigation Bar Styles */
-  nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  #logo img {
+    max-height: 100%;
   }
-  
-  nav a {
-    color: #74512D;
-    text-decoration: none;
-    margin: 10px;
-    font-size: 18px;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-
-  #dosis-header{
-    font-family: "Dosis", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
-
-  #horizontal-line {
-    color: solid white;
-}
-
-.content-wrapper {
-  display: flex;
-  flex:1;
-  justify-content: space-between;
-  padding-top: 70px;
-}
-
-.left-container,
-.right-container {
-    flex: 1;
-    padding: 20px;
-}
-
-
-.caffeine-calculator-container {
-  flex: 5;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin:auto;
-  padding:20px;
-  height: auto;
-}
-
-h1{
-  font-family: "Dosis", sans-serif;
-  font-size: 50px;
-  font-style: bold;
-  color: #74512D;
-  margin:20px;
-}
-
-h2{
-  font-family: "Dosis", sans-serif;
-  font-size: auto;
-  font-style: bold;
-}
-
-.body-weight-kilogram{
-  font-family: "Dosis", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-.sensitivity-to-caffeine{
-  font-family: "Dosis", sans-serif;
-  font-optical-sizing:auto;
-  font-style: normal;
-}
-
-/* User to input weight */
-input[type="number"] {
-  font-family: "Dosis", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  padding: 10px 20px;
-  border: 2px solid #ccc;
-  border-radius: 20px;
-  font-size: 16px;
-  outline: none;
-  min-width:150px;
-  transition: border-color 0.3s ease; 
-}
-
-input:hover {
-  cursor: text;
-}
-
-::placeholder {
-  font-family: "Dosis", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  color: #999;
-}
-
-input.input-filled {
-  border-color: #74512D;
-}
-
-/* User to select sensitivity to caffeine */
-/* Style the radio buttons */
-input[type="radio"] {
-  display: none;
-  margin-right: 5px; /* Example: Add spacing between radio buttons and labels */
-}
-
-/* Style the labels to look like buttons */
-label {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 5px;
-  width: 120px;
-  text-align: center;
-  background-color:white;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-/* Style the labels for selected radio buttons */
-input[type="radio"]:checked + label {
-  background-color: salmon;
-}
-
-#calculate-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-button {
-  font-family: "Dosis", sans-serif;
-  font-optical-sizing:auto;
-  font-style: normal;
-  font-size: 16px;
-  background-color: #ccc;
-  padding: 10px 20px;
-  border: 2px solid #ccc;
-  border-radius: 20px;
-  outline: none;
-  margin-top:50px;
-  width:100%;
-}
-
-/* Style for the Calculate button on hover */
-button:hover {
-  background-color: salmon;
-  cursor: pointer;
-}
-
-#result-box {
-  padding: 10px;
-  border-bottom: 5px solid #ccc;
-  border-radius: 20px;
-  background-color: #ffffff;
-  margin: 10px;
-  text-align: center;
-  width: max-content;
-}
-
-.result-section {
-  display: flex;
-  align-items: center;
-}
-
-.result-info {
-  display: flex;
-  flex-direction: column;
-  margin-right:
 
 footer {
   position: fixed;

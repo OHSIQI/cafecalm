@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>html {background-color: whitesmoke;}</style>
+
+    <!-- links to CSS files -->
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./caffeineCalculator.css" />
 
     <!-- Icons and Symbols -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -15,29 +18,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@200&display=swap" rel="stylesheet">
 
-    <style>
-        .material-symbols-outlined {
-          font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0;
-          font-size: 45px;
-          color: #74512D;
-        }
-      </style>     
 </head>
 
 <body>
     <header>
       <!-- Header content goes here-->
-      <div class="logo">
-        <span class="material-symbols-outlined"> Coffee
-        </span>
+      <div id="logo">
+        <img src="caffeinewise-icon.png"alt="Header Icon">
       </div>
-
-      <!-- Naviagtion menu goes here -->
-      <nav id="dosis-header">
-        <a href="#">CAFFEINE</a>
-        <a href="#">CUP</a>
-        <a href="#">ABOUT</a>
-      </nav>
 
     </header>
 
@@ -59,7 +47,7 @@
         </section>
   
         <h2>What is your caffeine sentivity?</h2>
-  
+
         <section class="sensitivity-to-caffeine">
           <input type="radio" id="more-sensitive" name="Sensitivity" value="moreSensitive">
           <label for="more-sensitive">More Sensitive</label>

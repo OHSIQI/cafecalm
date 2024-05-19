@@ -22,5 +22,5 @@ function calculateCaffeine() {
     var result = userInputWeight * sensitivityValue;
 
     // Update the result-box with the calculated result
-    document.getElementById("result-box").innerHTML = result + " mg";
+    document.getElementById("result-box").innerHTML = result + " mg";   
 }
