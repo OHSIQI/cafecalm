@@ -225,7 +225,13 @@ font-style: normal;
 font-family: "Dosis", sans-serif;
 font-style: bold;
 color: #3C2A21;
-flex-direction: column;
+flex-wrap: wrap;
+}
+
+.sensitivity-to-caffeine input[type="radio"],
+.sensitivity-to-caffeine label {
+  flex-basis: calc(33.33% - 20px); /* Adjust width to fit three items per row */
+  margin: 5px; /* Adjust spacing between items */
 }
 
 input[type="number"] {
