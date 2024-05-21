@@ -17,10 +17,38 @@ function calculateCaffeine() {
             break;
         }
     }
-
     // Calculate the result
     var result = userInputWeight * sensitivityValue;
 
     // Update the result-box with the calculated result
     document.getElementById("result-box").innerHTML = result + " mg";   
+
+    // Calculate the result
+    var result = userInputWeight * sensitivityValue;
+
+    // Update the result-box with the calculated result
+    document.getElementById("result-box").innerHTML = result + " mg";
+
+    // Calculate the average number of cups of coffee and round to the nearest decimal
+    var cups = Math.round(result / 95 * 10) / 10;
+
+    // Set the cups-value with the rounded cups value
+    document.getElementById("cups-value").textContent = cups + " cups of coffee";
+}
+
+function resetCaffeine() {
+    // Clear user input weight
+    document.getElementById("userInputWeight").value = "";
+
+    // Clear sensitivity to caffeine
+    var radios = document.getElementsByName('Sensitivity');
+    for (var i = 0; i < radios.length; i++) {
+        radios[i].checked = false;
+    }
+
+    // Clear result-box
+    document.getElementById("result-box").innerHTML = "0 mg";
+
+    // Clear cups-value
+    document.getElementById("cups-value").innerHTML = "0 cups of coffee";
 }

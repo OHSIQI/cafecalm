@@ -1,41 +1,313 @@
-  /* Header Style */
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('caffeinewisebackground.png');
+  background-size: cover;
+  background-position: center;
+}
 
   header {
     position: fixed;
     top: 0;
     width: 100%;
-    height:60px;
-    background-color: white;
+    height: 100px;
     padding: 10px 20px;
     display: flex;
     align-items: center;
     padding: 1px;
+    justify-content: flex-end;
+    z-index: 1000;
   }
 
-  /* Logo Styles */
-  #logo {
-    display: flex;
-    width: auto;
-    height: 100%;
-    margin-left: 10px;
+  footer {
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    background-color: #EEEBDD;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    z-index: 1000;
   }
 
-  #logo img {
-    max-height: 100%;
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  header nav ul li:last-child {
+    margin-right: 40px;
+  }
+  
+  header nav ul li a {
+    text-decoration:solid;
+    color: whitesmoke;
   }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width:100%;
-  background-color: #ccc;
-  color: #fff;
-  padding: 1px;
+  #dosis-header{
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color:whitesmoke;
+  }
+
+  #maintitle {
+    font-family:"Prata", serif;
+    color:whitesmoke;
+    font-size: 120px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #intro {
+    font-family: "Dosis", sans-serif;
+    color:whitesmoke;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .lets-go-button {
+    padding: 10px 25px;
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background-color: #C69D5F;
+    border: groove 2px whitesmoke;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .lets-go-button:hover {
+    background-color: #FFC100;
+  }
+
+  .no-underline {
+    text-decoration: none;
+  }
+
+
+.home-content-wrapper {
+  display: flex;
+  flex:1;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin:10px;
+  }
+
+.three-box-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin:40px;
+}
+
+.three-box {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   text-align: center;
+  height:auto;
+}
+
+.three-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Below is CSS for Caffeine Caculator Page*/
+
+.content-wrapper {
+  display: flex;
+  flex:1;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  /* background-color: #CDFADB; */
+  }
+
+.left-container,
+.right-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.caffeine-calculator-container {
+flex: 2;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin:auto;
+padding: 50px;
+height: auto;
+background-color: #543310;
+/* border-radius: 50px; */
+}
+
+#sub-title{
+  font-family:"Prata", serif;
+  font-size: 60px;
+  font-style: bold;
+  color: white;
+  margin:10px;
+  text-align: center;
+}
+
+#caffeine-questions{
+font-family: "Dosis", sans-serif;
+font-size: auto;
+font-style: bold;
+color: #F8F4E1;
+}
+
+.body-weight-kilogram{
+font-family: "Dosis", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+}
+
+.sensitivity-to-caffeine{
+font-family: "Dosis", sans-serif;
+font-optical-sizing:auto;
+font-style: normal;
+}
+
+/* User to input weight */
+input[type="number"] {
+font-family: "Dosis", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+padding: 10px 20px;
+border: 2px solid #ccc;
+border-radius: 2px;
+font-size: 16px;
+outline: none;
+min-width:150px;
+transition: border-color 0.3s ease; 
+}
+
+input:hover {
+cursor: text;
+}
+
+::placeholder {
+font-family: "Dosis", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+color: #999;
+}
+
+input.input-filled {
+border-color: #74512D;
+}
+
+/* User to select sensitivity to caffeine */
+input[type="radio"] {
+display: none;
+margin-right: 5px;
+}
+
+/* Style the labels to look like buttons */
+label {
+display: inline-block;
+padding: 10px 20px;
+margin: 5px;
+width: 85px;
+text-align: center;
+background-color: white;
+border: 1px solid #ccc;
+border-radius: 2px;
+cursor: pointer;
+}
+
+/* Style the labels for selected radio buttons */
+input[type="radio"]:checked + label {
+background-color: #C69D5F;
+}
+
+#calculate-button {
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+align-items: center;
+}
+
+button {
+font-family: "Dosis", sans-serif;
+font-optical-sizing:auto;
+font-style: normal;
+font-size: 16px;
+background-color: #C69D5F;
+padding: 10px 20px;
+border: 2px solid #ccc;
+border-radius: 20px;
+outline: none;
+margin:10px;
+margin-top: 40px;
+width:auto;
+}
+
+/* Style for the Calculate button on hover */
+button:hover {
+cursor: pointer;
+}
+
+#result-box {
+padding: 10px;
+border-bottom: 5px solid #ccc;
+border-radius: 20px;
+margin: 10px;
+text-align: center;
+width: max-content;
+background-color: #ffffff;
+background-color: #FFC100;
+}
+
+.result-section {
+display: flex;
+align-items: center;
+}
+
+.result-info {
+display: flex;
+flex-direction: column;
+margin-right: 20px;
+} 
+
+#cups-value {
+  padding: 10px;
+  border-bottom: 5px solid #ccc;
+  border-radius: 20px;
+  background-color: #FFC100;
+  margin: 10px;
+  text-align: center;
+  width: max-content;
+}
+
+
+.maintitle{
+  align: center;
 }
