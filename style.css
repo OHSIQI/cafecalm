@@ -34,12 +34,7 @@ footer {
   }
 
   @media screen and (max-width: 600px) {
-    .content-wrapper{
-      width: 100%
-    }
-    .caffeine-calculator-container{
-      width: 100%
-    }
+
   }
 
   header nav ul li {
@@ -162,6 +157,7 @@ footer {
   justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 50px;
+  align-items: center;
   }
 
 .left-container,
@@ -226,12 +222,6 @@ font-family: "Dosis", sans-serif;
 font-style: bold;
 color: #3C2A21;
 flex-wrap: wrap;
-}
-
-.sensitivity-to-caffeine input[type="radio"],
-.sensitivity-to-caffeine label {
-  flex-basis: calc(33.33% - 20px); /* Adjust width to fit three items per row */
-  margin: 5px; /* Adjust spacing between items */
 }
 
 input[type="number"] {
