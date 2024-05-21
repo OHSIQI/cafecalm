@@ -21,13 +21,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-7TTR4WD9L4');
-    </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TTR4WD9L4"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7TTR4WD9L4');
+  </script>
 
 </head>
 
@@ -51,10 +53,10 @@
 
       <div class="caffeine-calculator-container">
         
-        <h1 id="sub-title">☕ Caffeine Daily Limit ☕ Calculator </h1>
+        <h1 id="sub-title">☕ Caffeine Daily Limit Calculator ☕</h1>
 
         <h2 id="caffeine-questions">What is your body weight?</h2>
-      
+
         <section class="body-weight-kilogram">
           <input type="number" id="userInputWeight" placeholder="Enter body weight (kg)">
         </section>
@@ -79,14 +81,13 @@
           <button class="reset-button" onclick="resetCaffeine()">Reset</button>
         </section>
         
-        <section class="result-section" id="caffeine-questions">
+        <section class="result-section" id="caffeine-results">
           <h2>Your caffeine daily limit is</h2>
           <div id="result-box">0 mg</div>
           <h2>which is equivalent to</h2>
           <div id="cups-value">0 cups of coffee</div>
           <h2>.</h2>
         </section>
-        
       </div>
 
       <div class="right-container"
@@ -95,9 +96,9 @@
 
   </div>
 
-  <footer>
+  <footer id="footer">
     <div>
-      <p><strong>Disclaimer:</strong> This website is created for learning purposes only.</p>
+      <p>Disclaimer: This website is created for learning purposes only. The information provided here should not be considered professional advice. Please note that we make no guarantees regarding the accuracy, completeness, or reliability of the contents of this website. Any actions you take based on the contents of this website are at your own risk. We are not liable for any losses or damages incurred from the use of this website. </p>
       <p>&copy; 2024 Caffeine Wise ☕. All rights reserved.</p>
     </div>
   </footer>
