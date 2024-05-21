@@ -57,7 +57,14 @@ body {
     color: whitesmoke;
   }
 
-  #dosis-header{
+  .dosis-header{
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color:whitesmoke;
+  }
+
+  #discliamer{
     font-family: "Dosis", sans-serif;
     font-size: 20px;
     text-align: center;
@@ -143,8 +150,8 @@ body {
   display: flex;
   flex:1;
   justify-content: space-between;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   /* background-color: #CDFADB; */
   }
 
@@ -155,7 +162,7 @@ body {
 }
 
 .caffeine-calculator-container {
-flex: 2;
+flex: 4;
 display:flex;
 flex-direction: column;
 align-items: center;
@@ -164,7 +171,7 @@ margin:auto;
 padding: 50px;
 height: auto;
 background-color: #543310;
-/* border-radius: 50px; */
+border-radius: 20px;
 }
 
 #sub-title{
@@ -180,7 +187,7 @@ background-color: #543310;
 font-family: "Dosis", sans-serif;
 font-size: auto;
 font-style: bold;
-color: #F8F4E1;
+color: black;
 }
 
 .body-weight-kilogram{
@@ -202,7 +209,7 @@ font-optical-sizing: auto;
 font-style: normal;
 padding: 10px 20px;
 border: 2px solid #ccc;
-border-radius: 2px;
+border-radius: 20px;
 font-size: 16px;
 outline: none;
 min-width:150px;
@@ -239,7 +246,7 @@ width: 85px;
 text-align: center;
 background-color: white;
 border: 1px solid #ccc;
-border-radius: 2px;
+border-radius: 20px;
 cursor: pointer;
 }
 
@@ -248,31 +255,53 @@ input[type="radio"]:checked + label {
 background-color: #C69D5F;
 }
 
-#calculate-button {
+#calculate-rest-button {
 display: flex;
 justify-content: space-between;
 flex-direction: row;
 align-items: center;
 }
 
-button {
-font-family: "Dosis", sans-serif;
-font-optical-sizing:auto;
-font-style: normal;
-font-size: 16px;
-background-color: #C69D5F;
-padding: 10px 20px;
-border: 2px solid #ccc;
-border-radius: 20px;
-outline: none;
-margin:10px;
-margin-top: 40px;
-width:auto;
+.calculate-button {
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  margin: 10px;
+  margin-top: 40px;
+  width: auto;
+  background-color: maroon;
+  color: white;
+  cursor: pointer;
 }
 
-/* Style for the Calculate button on hover */
-button:hover {
-cursor: pointer;
+/* Style for Calculate button on hover */
+.calculate-button:hover {
+  background-color: #FFC100;
+}
+
+/* Style for Reset button */
+.reset-button {
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  margin: 10px;
+  margin-top: 40px;
+  width: auto;
+  background-color: maroon;
+  color: white;
+  cursor: pointer;
+}
+
+/* Style for Reset button on hover */
+.reset-button:hover {
+  background-color: #FFC100;
+  color: white;
 }
 
 #result-box {
@@ -289,6 +318,11 @@ background-color: #FFC100;
 .result-section {
 display: flex;
 align-items: center;
+background-color: burlywood;
+border:whitesmoke 2px solid;
+border-radius: 20px;
+padding: 10px 20px;
+margin-top: 50px;
 }
 
 .result-info {
