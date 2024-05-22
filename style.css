@@ -141,6 +141,8 @@ footer {
 
   .three-box {
     height: auto;
+    padding: 20px;
+    box-sizing: border-box;
   }
 }
 
@@ -165,8 +167,9 @@ footer {
   opacity: 80%;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
   text-align: center;
-  height:500px;
-  overflow: hidden;
+  height:auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .three-box button {
@@ -177,6 +180,7 @@ footer {
   flex: 1;
   margin: 2px 0;
   padding: 2px;
+  margin-bottom: 20px;
 }
 
 .three-box-title{
@@ -209,7 +213,7 @@ footer {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 
