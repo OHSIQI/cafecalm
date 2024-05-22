@@ -20,6 +20,12 @@ header {
     z-index: 1000;
   }
 
+hr{
+  color: white;
+  width: 80%;
+  border-style: ridge;
+}
+
 footer {
     position: fixed;
     padding: 1px;
@@ -31,10 +37,6 @@ footer {
     text-align: center;
     background-color: #EEEBDD;
     color: #fff;
-  }
-
-  @media screen and (max-width: 600px) {
-
   }
 
   header nav ul li {
@@ -50,6 +52,7 @@ footer {
     text-decoration:solid;
     color: whitesmoke;
   }
+
 
 #background {
     position: fixed;
@@ -98,7 +101,7 @@ footer {
   }
 
 /* Below is CSS for main page "Let's Go" button */
-  #lets-go-button {
+  .lets-go-button {
     
     font-family: "Dosis", sans-serif;
     font-size: 18px;
@@ -111,10 +114,14 @@ footer {
     transition: background-color 0.3s;
     display: block;
     margin: 0 auto;
+    margin-bottom: 10px;
+    height: 50px;
+    text-decoration: none;
   }
   
-  #lets-go-button:hover {
+  .lets-go-button:hover {
     background-color: #FFC100;
+    text-decoration: none;
   }
 
   .no-underline {
@@ -122,32 +129,89 @@ footer {
   }
 
 
-/*Below is CSS for "About" */
+/*Below is CSS for "Three-Box" */
+
+@media only screen and (max-width: 600px) {
+  .three-box-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .three-box {
+    height: auto;
+  }
+}
 
 .three-box-wrapper {
   display: flex;
-  flex: 1;
   justify-content: space-between;
-  flex-direction: row;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin:40px;
+  margin-left:200px;
+  margin-right:200px;
 }
 
 .three-box {
+  flex-direction: column;
+  display: flex;
+  justify-content: column;
   flex: 1;
-  margin: 10px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 40px;
+  background-color: #3C2A21;
+  opacity: 80%;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
   text-align: center;
-  height:auto;
+  height:500px;
+  overflow: hidden;
 }
 
-.three-box img {
-  max-width: 100%;
-  height: auto;
+.three-box button {
+  margin-top: auto;
 }
+
+.three-box-details {
+  flex: 1;
+  margin: 2px 0;
+  padding: 2px;
+}
+
+.three-box-title{
+  font-family:"Prata", serif;
+  font-size: 35px;
+  color:whitesmoke;
+  text-align: center;
+}
+
+.three-box h{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.three-box p{
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  font-style: bold;
+  text-align: center;
+  color:whitesmoke;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:5px;
+}
+
+.three-box-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 /* Below is CSS for Caffeine Caculator Page*/
 
@@ -177,6 +241,7 @@ padding: 50px;
 height: auto;
 background-color: #3C2A21;
 border-radius: 20px;
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 #sub-title{
@@ -195,19 +260,31 @@ font-style: bold;
 color: whitesmoke;
 }
 
+#additional-infor{
+  font-family: "Dosis", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  /* font-style:italic; */
+  color: whitesmoke;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 #caffeine-results{
   font-family: "Dosis", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-style: bold;
   color: #3C2A21;
 }
 
 #result-box,
-#cups-value {
+#cups-value,
+#beverage-result {
   font-family: "Prata", serif;
   font-size: 18px;
   font-style: bold;
   color: #3C2A21;
+  text-align:center;
 }
 
 .body-weight-kilogram{
@@ -215,6 +292,10 @@ font-family: "Dosis", sans-serif;
 font-size: 15px;
 font-optical-sizing: auto;
 font-style: normal;
+}
+
+#userInputWeight{
+  box-shadow: 0px 2px 4px white;
 }
 
 .sensitivity-to-caffeine{
@@ -265,7 +346,8 @@ margin: 5px;
 width: 85px;
 text-align: center;
 background-color: white;
-border: 10px outset #FEFAF6;
+/* border: 10px outset #FEFAF6; */
+box-shadow: 0px 2px 4px white;
 border-radius: 20px;
 cursor: pointer;
 }
@@ -281,11 +363,12 @@ flex-direction: row;
 align-items: center;
 }
 
-#calculate-button {
+#calculate-button,
+#beverage-button {
   font-family: "Dosis", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   padding: 10px 20px;
-  border: 10px outset #EADBC8;
+  /* border: 10px outset #EADBC8; */
   border-radius: 20px;
   outline: none;
   margin: 10px;
@@ -296,16 +379,17 @@ align-items: center;
   cursor: pointer;
 }
 
-#calculate-button:hover {
+#calculate-button:hover,
+#beverage-button:hover {
   background-color: #FFC100;
 }
 
 /* Style for Reset button */
 #reset-button {
   font-family: "Dosis", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   padding: 10px 20px;
-  border: 10px outset #EADBC8;
+  /* border: 10px outset #EADBC8; */
   border-radius: 20px;
   outline: none;
   margin: 10px;
@@ -334,9 +418,10 @@ background-color: #FFC100;
 
 .result-section {
 display: flex;
+width: 500px;
 align-items: center;
 background-color: #FEFAF6;
-border-radius: 50px;
+border-radius: 30px;
 padding: 10px 20px;
 margin-top: 50px;
 }
@@ -355,4 +440,52 @@ margin-right: 20px;
   margin: 10px;
   text-align: center;
   width: max-content;
+}
+
+/* Below is CSS for Beverage Calculator*/
+
+select {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 10px 20px;
+  border: 3px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  min-width:150px;
+  transition: border-color 0.3s ease;
+  margin: 20px; 
+}
+
+label[for="beverage"] {
+  display: none;
+}
+
+/* #beverage-result{
+  padding: 10px;
+  border-bottom: 5px solid #ccc;
+  border-radius: 20px;
+  background-color: #FFC100;
+  margin: 10px;
+  text-align: center;
+  width: max-content;
+} */
+
+#beverage-result{
+  padding: 10px 20px;
+  border-radius: 20px;
+  outline: none;
+  margin: 10px;
+  width: auto;
+  background-color: #FFC100;
+  color: black;
+  cursor: pointer;
+}
+
+.result-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }

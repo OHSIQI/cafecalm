@@ -52,3 +52,59 @@ function resetCaffeine() {
     // Clear cups-value
     document.getElementById("cups-value").innerHTML = "0 cups of coffee";
 }
+
+
+function getCaffeineContent() {
+    var beverage = document.getElementById("beverage").value;
+    var result = document.getElementById("beverage-result");
+  
+    switch (beverage) {
+    case "select_from_list":
+        result.textContent = "0 mg";
+        break;
+        case "brewed_coffee":
+        result.textContent = "95 mg";
+        break;
+      case "espresso":
+        result.textContent = "63 mg";
+        break;
+      case "instant_coffee":
+        result.textContent = "63 mg";
+        break;
+      case "decaf_coffee":
+        result.textContent = "2 mg";
+        break;
+      case "black_tea":
+        result.textContent = "40-70 mg";
+        break;
+      case "green_tea":
+        result.textContent = "35 mg";
+        break;
+      case "white_tea":
+        result.textContent = "20 mg";
+        break;
+      case "herbal_tea":
+        result.textContent = "0 mg";
+        break;
+      case "latte":
+        result.textContent = "126 mg";
+        break;
+      case "cappuccino":
+        result.textContent = "63 mg";
+        break;
+      case "americano":
+        result.textContent = "126 mg";
+        break;
+      case "mocha":
+        result.textContent = "126 mg";
+        break;
+      case "macchiato":
+        result.textContent = "63 mg";
+        break;
+      case "flat_white":
+        result.textContent = "126 mg";
+        break;
+      default:
+        result.textContent = "Invalid selection";
+    }
+  }

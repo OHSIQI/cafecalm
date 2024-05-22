@@ -37,12 +37,14 @@
   <header>
     <nav id="dosis-header">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="caffeineCalculator.html">Calculator</a></li>
-        <li><a href="others.html">Contact</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <!-- <li><a href="caffeineCalculator.html">Calculator</a></li>
+        <li><a href="caffeineInBeverages.html">Beverages</a></li> -->
       </ul>
     </nav>
   </header>
+
   
     <div id="background"></div>
     
@@ -52,9 +54,15 @@
 
       <div class="caffeine-calculator-container">
         
-        <h1 id="sub-title">☕ Caffeine Daily Limit Calculator ☕</h1>
+        <h1 id="sub-title">☕ Caffeine Daily Limit ☕</h1>
 
-        <h2 id="caffeine-questions">What is your body weight?</h2>
+        <hr>
+
+        <h2 id="additional-infor">Ready to unravel the caffeine mystery? Fear not, we've got the secret code to moderation: Aim for 2.5 to 4 milligrams of caffeine per kilogram of body weight. Let's jump into the caffeine calculator and unlock the caffeinated wonders that await!</h2>
+
+        <hr>
+
+        <h3 id="caffeine-questions">What is your body weight?</h3>
 
         <section class="body-weight-kilogram">
           <input type="number" id="userInputWeight" placeholder="Enter body weight (kg)">
@@ -75,18 +83,18 @@
   
         <section class="calculate-reset-button">
           <!-- Calculate button -->
-          <button id="calculate-button" onclick="calculateCaffeine()">Calculate</button>
+          <button id="calculate-button" onclick="calculateCaffeine()">CALCULATE</button>
           <!-- Reset button -->
-          <button id="reset-button" onclick="resetCaffeine()">Reset</button>
+          <button id="reset-button" onclick="resetCaffeine()">RESET</button>
         </section>
-        
+
         <section class="result-section" id="caffeine-results">
-          <h2>Your caffeine daily limit is</h2>
+          <h2>Your caffeine daily limit is approximately</h2>
           <div id="result-box">0 mg</div>
           <h2>which is equivalent to</h2>
           <div id="cups-value">0 cups of coffee</div>
-          <h2>.</h2>
         </section>
+
       </div>
 
       <div class="right-container"
