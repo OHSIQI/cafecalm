@@ -67,6 +67,7 @@ footer {
   }
 
 /* Below is CSS for main fonts */
+
   #dosis-header{
     font-family: "Dosis", sans-serif;
     font-size: 20px;
@@ -446,7 +447,7 @@ margin-right: 20px;
   width: max-content;
 }
 
-/* Below is CSS for Beverage Calculator*/
+/* Below is CSS for Caffeine In Beverage*/
 
 select {
   font-family: "Dosis", sans-serif;
