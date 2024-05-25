@@ -31,6 +31,7 @@ footer {
     padding: 1px;
     bottom: 0;
     width:100%;
+    height: 100px;
     z-index: 1000;
     left: 0;
     width: 100%;
@@ -38,7 +39,7 @@ footer {
     background-color: #EEEBDD;
     color: #fff;
   }
-
+  
   header nav ul li {
     display: inline;
     margin-right: 20px;
@@ -94,10 +95,10 @@ footer {
 
   #footer-disclaimer {
     font-family: "Dosis", sans-serif;
-    font-size: 12px;
+    font-size: 1rem;
     text-align: center;
-    color:burlywood;
-    padding: 0 60px;
+    color: #C69D5F;
+    padding: 0 10%;
     box-sizing: border-box;
   }
 
@@ -132,7 +133,7 @@ footer {
 
 /*Below is CSS for "Three-Box" */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (orientation: portrait) {
   .three-box-wrapper {
     flex-direction: column;
     align-items: center;
@@ -145,6 +146,33 @@ footer {
     padding: 20px;
     box-sizing: border-box;
   }
+
+  .content-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .left-container,
+  .right-container {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .caffeine-calculator-container {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+}
+
+footer {
+  height: 80px;
+}
+
+#footer-disclaimer {
+  font-size: 0.5rem;
+  padding: 0 5%;
+}
+
 }
 
 .three-box-wrapper {
@@ -152,8 +180,8 @@ footer {
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-left:200px;
-  margin-right:200px;
+  margin-left:50px;
+  margin-right:50px;
 }
 
 .three-box {
