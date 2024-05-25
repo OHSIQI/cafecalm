@@ -62,7 +62,7 @@ function getCaffeineContent() {
     case "select_from_list":
         result.textContent = "0 mg";
         break;
-        case "brewed_coffee":
+        case "nanyang_coffee":
         result.textContent = "95 mg";
         break;
       case "espresso":
