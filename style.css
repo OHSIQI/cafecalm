@@ -169,7 +169,7 @@ footer {
   }
 
   .caffeine-calculator-container {
-    flex: 1;
+    /* flex: 1; */
     padding: 20px;
     /* margin-left: 50px;
     margin-right: 50px; */
@@ -222,7 +222,6 @@ footer {
   }
 
 }
-
 
 /* Below CSS for three-box */
 .three-box-wrapper {
