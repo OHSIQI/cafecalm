@@ -162,19 +162,75 @@ footer {
     flex: 1;
     padding: 20px;
     margin: 10px;
+  }
+
+  footer {
+    height: 80px;
+  }
+
+  #footer-disclaimer {
+    font-size: 0.5rem;
+    padding: 0 5%;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+  }
+
+  .left-container,
+  .right-container {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .caffeine-calculator-container {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  #sub-title {
+    font-size: 30px;
+  }
+
+  #additional-infor {
+    font-size: 16px;
+  }
+
+  #caffeine-questions {
+    font-size: 18px;
+  }
+
+  .body-weight-kilogram input[type="number"] {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .sensitivity-to-caffeine label {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .calculate-reset-button {
+    flex-direction: column;
+  }
+
+  #calculate-button,
+  #reset-button {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .result-section {
+    margin-top: 30px;
+  }
+
 }
 
-footer {
-  height: 80px;
-}
 
-#footer-disclaimer {
-  font-size: 0.5rem;
-  padding: 0 5%;
-}
-
-}
-
+/* Below CSS for three-box */
 .three-box-wrapper {
   display: flex;
   justify-content: space-between;
