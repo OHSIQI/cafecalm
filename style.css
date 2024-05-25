@@ -131,7 +131,7 @@ footer {
   }
 
 
-/*Below is CSS for "Three-Box" */
+/*Below is CSS for @media */
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
   .three-box-wrapper {
@@ -147,7 +147,7 @@ footer {
     box-sizing: border-box;
   }
 
-  .content-wrapper {
+  /* .content-wrapper {
     flex-direction: column;
     align-items: stretch;
   }
@@ -156,7 +156,7 @@ footer {
   .right-container {
     flex: 1;
     padding: 10px;
-  }
+  } */
 
   .caffeine-calculator-container {
     flex: 1;
