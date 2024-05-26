@@ -476,6 +476,8 @@ label[for="beverage"] {
 
   #dosis-header{
     font-size: 15px;
+    background-color:#3C2A21;
+    border-radius: 20px;
   }
   .three-box-wrapper {
     flex-direction: column;
