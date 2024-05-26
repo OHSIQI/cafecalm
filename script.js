@@ -70,7 +70,7 @@ function getCaffeineContent() {
     case "select_from_list":
         result.textContent = "0 mg";
         break;
-        case "nanyang_coffee":
+      case "nanyang_coffee":
         result.textContent = "95 mg";
         break;
       case "espresso":
@@ -80,16 +80,16 @@ function getCaffeineContent() {
         result.textContent = "63 mg";
         break;
       case "decaf_coffee":
-        result.textContent = "2 mg";
+        result.textContent = "2-5 mg";
         break;
       case "black_tea":
         result.textContent = "40-70 mg";
         break;
       case "green_tea":
-        result.textContent = "35 mg";
+        result.textContent = "20-45 mg";
         break;
       case "white_tea":
-        result.textContent = "20 mg";
+        result.textContent = "15-30 mg";
         break;
       case "herbal_tea":
         result.textContent = "0 mg";
@@ -110,7 +110,7 @@ function getCaffeineContent() {
         result.textContent = "63 mg";
         break;
       case "flat_white":
-        result.textContent = "126 mg";
+        result.textContent = "63-126 mg";
         break;
       default:
         result.textContent = "Invalid selection";
