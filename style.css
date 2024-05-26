@@ -503,7 +503,7 @@ label[for="beverage"] {
     flex-direction: column;
     align-items: stretch;
     padding: 20px;
-    width: 100%;
+    width: auto;
     box-sizing: border-box;
   }
 
@@ -511,8 +511,6 @@ label[for="beverage"] {
     flex: 3;
     padding: 20px;
     margin: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
     height: auto;
   }
 
