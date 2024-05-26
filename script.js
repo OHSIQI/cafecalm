@@ -1,3 +1,10 @@
+//Determine Your Body Weight:
+//Body weight plays a significant role in how much caffeine a person should consume daily. 
+//Typically, a general rule of thumb is to consume between 2.5 to 4 milligrams of caffeine per kilogram of body weight.
+
+//Caffeine Sensitivity: 
+//More Sensitive: 2.5mg per kg of body weight / Normal: 3.25mg per kg of body weight  / More Tolerant: 4.0mg per kg of body weight
+
 function calculateCaffeine() {
     // Get the user input weight
     var userInputWeight = parseFloat(document.getElementById("userInputWeight").value);
@@ -30,6 +37,7 @@ function calculateCaffeine() {
     document.getElementById("result-box").innerHTML = result + " mg";
 
     // Calculate the average number of cups of coffee and round to the nearest decimal
+    // Approximately 95mg of caffeine in 8oz brewed coffee
     var cups = Math.round(result / 95 * 10) / 10;
 
     // Set the cups-value with the rounded cups value
