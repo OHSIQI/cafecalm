@@ -506,7 +506,6 @@ label[for="beverage"] {
     margin: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin: 20px;
     width: auto;
     box-sizing: border-box;
   }
@@ -521,7 +520,7 @@ label[for="beverage"] {
   .left-container,
   .right-container {
     flex: 1;
-    padding: 5px;
+    padding: 20px;
     display: none; 
   }
 
