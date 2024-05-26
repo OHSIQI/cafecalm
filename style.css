@@ -500,14 +500,14 @@ label[for="beverage"] {
     padding: 0 5%;
   }
 
-  .content-wrapper {
+  /* .content-wrapper {
     flex-direction: column;
     /* align-items: stretch; */
     padding: 20px;
     margin: 20px;
     width: auto;
     box-sizing: border-box;
-  }
+  } */
 
   /* .caffeine-calculator-container {
     flex: 3;
