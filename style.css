@@ -75,6 +75,8 @@ footer {
     font-style: bold;
     text-align: left;
     color:whitesmoke;
+    background-color:#3C2A21;
+    border-radius: 20px;
   }
 
   #maintitle {
