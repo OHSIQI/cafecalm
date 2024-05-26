@@ -79,10 +79,10 @@ footer {
 
   #maintitle {
     font-family:"Prata", serif;
-    font-size: 120px;
+    font-size:120px;
     color:whitesmoke;
     text-align: center;
-    margin-bottom: 5px;
+    margin: 20px;
     padding: 10px;
   }
 
@@ -132,97 +132,7 @@ footer {
   }
 
 
-/*Below is CSS for @media */
 
-@media only screen and (max-width: 600px) and (orientation: portrait) {
-
-  #dosis-header{
-    font-size: 15px;
-  }
-  .three-box-wrapper {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .three-box {
-    height: auto;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  footer {
-    height: 80px;
-  }
-
-  #footer-disclaimer {
-    font-size: 0.5rem;
-    padding: 0 5%;
-  }
-
-  .content-wrapper {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .caffeine-calculator-container {
-    /* flex: 1; */
-    padding: 20px;
-    /* margin-left: 50px;
-    margin-right: 50px; */
-    margin: 0;
-    height: auto;
-  }
-
-  .left-container,
-  .right-container {
-    /* flex: 1;
-    padding: 20px; */
-    display: none; 
-  }
-
-  #sub-title {
-    font-size: 30px;
-  }
-
-  #additional-infor {
-    font-size: 16px;
-  }
-
-  #caffeine-questions {
-    font-size: 18px;
-  }
-
-  .body-weight-kilogram input[type="number"] {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-
-  .sensitivity-to-caffeine label {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-
-  .calculate-reset-button {
-    flex-direction: column;
-  }
-
-  #calculate-button,
-  #reset-button {
-    margin-top: 20px;
-    width: 100%;
-  }
-
-  .result-section {
-    margin-top: 30px;
-    width: auto;
-  }
-
-}
 
 /* Below CSS for three-box */
 .three-box-wrapper {
@@ -297,7 +207,6 @@ footer {
 
 
 /* Below is CSS for Caffeine Caculator Page*/
-
 .content-wrapper {
   display: flex;
   flex:1;
@@ -314,7 +223,7 @@ footer {
 }
 
 .caffeine-calculator-container {
-flex: 4;
+flex: 3;
 display:flex;
 flex-direction: column;
 align-items: center;
@@ -560,4 +469,95 @@ label[for="beverage"] {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+}
+
+/*Below is CSS for @media */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+
+  #dosis-header{
+    font-size: 15px;
+  }
+  .three-box-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .three-box {
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  footer {
+    height: 80px;
+  }
+
+  #footer-disclaimer {
+    font-size: 0.5rem;
+    padding: 0 5%;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .caffeine-calculator-container {
+    flex: 3;
+    padding: 20px;
+    margin: 20px;
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    height: auto;
+  }
+
+  .left-container,
+  .right-container {
+    flex: 1;
+    padding: 20px;
+    display: none; 
+  }
+
+  #sub-title {
+    font-size: 30px;
+  }
+
+  #additional-infor {
+    font-size: 16px;
+  }
+
+  #caffeine-questions {
+    font-size: 18px;
+  }
+
+  .body-weight-kilogram input[type="number"] {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .sensitivity-to-caffeine label {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .calculate-reset-button {
+    flex-direction: column;
+  }
+
+  #calculate-button,
+  #reset-button {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .result-section {
+    margin-top: 30px;
+    width: auto;
+  }
+
 }
