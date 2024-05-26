@@ -85,7 +85,6 @@ footer {
     color:whitesmoke;
     text-align: center;
     margin: 20px;
-    padding: 10px;
   }
 
   #intro {
@@ -504,8 +503,7 @@ label[for="beverage"] {
   .content-wrapper {
     flex-direction: column;
     align-items: stretch;
-    /* padding: 20px;
-    margin: 20px; */
+    margin: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 20px;
