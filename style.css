@@ -133,9 +133,6 @@ footer {
     text-decoration: none;
   }
 
-
-
-
 /* Below CSS for three-box */
 .three-box-wrapper {
   display: flex;
@@ -502,30 +499,30 @@ label[for="beverage"] {
     padding: 0 5%;
   }
 
-  /* .content-wrapper {
+  .content-wrapper {
     flex-direction: column;
     /* align-items: stretch; */
     padding: 20px;
     margin: 20px;
     width: auto;
     box-sizing: border-box;
-  } */
+  }
 
-  /* .caffeine-calculator-container {
+  .caffeine-calculator-container {
     flex: 3;
     padding: 20px;
     margin: 20px;
     height: auto;
-  } */
+  }
 
-  /* .left-container,
+  .left-container,
   .right-container {
     flex: 1;
     padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
     display: none; 
-  } */
+  }
 
   #sub-title {
     font-size: 30px;
