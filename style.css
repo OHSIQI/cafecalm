@@ -409,7 +409,7 @@ background-color: #FFC100;
 
 .result-section {
 display: flex;
-width: 500px;
+width: auto;
 align-items: center;
 background-color: #FEFAF6;
 border-radius: 30px;
@@ -511,8 +511,8 @@ label[for="beverage"] {
     flex: 3;
     padding: 20px;
     margin: 20px;
-    /* margin-left: 50px;
-    margin-right: 50px; */
+    margin-left: 50px;
+    margin-right: 50px;
     height: auto;
   }
 
