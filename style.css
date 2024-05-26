@@ -558,8 +558,26 @@ label[for="beverage"] {
   }
 
   .result-section {
+    flex-direction: column;
+    align-items: center;
     margin-top: 30px;
-    width: auto;
+    padding: 20px;
+    width: 90%;
+    box-sizing: border-box;
+  }
+
+  .result-info {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #result-box,
+  #cups-value {
+    width: 100%;
+  }
+
+  #cups-value {
+    margin-top: 20px;
   }
 
 }
