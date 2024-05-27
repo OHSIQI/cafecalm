@@ -3,14 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Caffeine Wise</title>
       
-    
         <!-- links to CSS files -->
         <link rel="stylesheet" href="./style.css" />
-    
-        <!-- Icons and Symbols -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,17 +47,17 @@
             </div>
 
             <div class="caffeine-calculator-container">
-
                 <h1 id="sub-title">☕ Caffeine In Beverages ☕</h1>
 
                 <hr>
 
-                 <h2 id="additional-infor">Just like a choose-your-own-adventure book, the caffeine content in your coffee or tea is a thrilling tale spun by the brewing method, the type of beans or leaves, and even the size of your cup. Ready to embark on this caffeinated journey? Let's spill the beans on the caffeine content of your favorite beverages!"</h2>
+                <h2 id="additional-infor">Just like a choose-your-own-adventure book, the caffeine content in your coffee or tea is a thrilling tale spun by the brewing method, the type of beans or leaves, and even the size of your cup. Ready to embark on this caffeinated journey? Let's spill the beans on the caffeine content of your favorite beverages!"</h2>
 
                 <hr>
 
                 <h3 id="caffeine-questions">What would you like to drink?</h3>
-
+                
+                <!-- Dropdown list for user to select beverage-->
                 <Section class="beverage-list">
                     <label for="beverage">Beverage</label>
                      <select id="beverage">
@@ -85,15 +81,14 @@
                 </Section>
                 
                 <div>
+                    <!-- Display caffeine content in selected beverage -->
                     <p id="beverage-result">0 mg</p>
                     <button id="beverage-button" onclick="getCaffeineContent()">SHOW CAFFEINE CONTENT</button>
                 </div>
-               
-
             </div>
            
-            <div class="right-container"
-            </div>
+          <div class="right-container">
+          </div>
         </div>
 
         <footer id="footer-disclaimer">
@@ -106,6 +101,5 @@
           <!-- External JavaScript -->
         <script src="script.js"></script>
           
-
       </body>
-  </html>
+</html>

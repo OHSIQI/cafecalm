@@ -6,10 +6,14 @@
 //More Sensitive: 2.5mg per kg of body weight / Normal: 3.25mg per kg of body weight  / More Tolerant: 4.0mg per kg of body weight
 
 function calculateCaffeine() {
-    // Get the user input weight
+    // Get the user to input weight
     var userInputWeight = parseFloat(document.getElementById("userInputWeight").value);
 
     // Get the sensitivity to caffeine value
+    // for (var i = 0; i < radios.length; i++): This is a for loop that iterates over each element in the 'radios' collection.
+    // var i = 0: Initializes a variable 'i' to 0, which represents the index of the first element in the collection.
+    // i < radios.length: Specifies the condition for continuing the loop. It will iterate as long as 'i' is less than the length of the 'radios' collection.
+    // i++: Increments the value of 'i' by 1 after each iteration, moving to the next element in the collection.
     var sensitivityValue;
     var radios = document.getElementsByName('Sensitivity');
     for (var i = 0; i < radios.length; i++) {

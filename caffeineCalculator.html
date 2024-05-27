@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Caffeine Wise</title>
 
-    <!-- links to CSS files -->
-    <link rel="stylesheet" href="./style.css" />
+      <!-- links to CSS files -->
+      <link rel="stylesheet" href="./style.css" />
 
-    <!-- Icons and Symbols -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@200&display=swap" rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@200&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TTR4WD9L4"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-7TTR4WD9L4');
-  </script>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TTR4WD9L4"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7TTR4WD9L4');
+      </script>
+  </head>
 
-</head>
+  <body>
+    <header>
+      <nav id="dosis-header">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="tools.html">TOOLS</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav id="dosis-header">
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="tools.html">TOOLS</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  
     <div id="background"></div>
     
     <div class="content-wrapper">
@@ -52,7 +46,7 @@
 
       <div class="caffeine-calculator-container">
       
-        <h1 id="sub-title">☕ Daily Caffeine Limit ☕</h1>
+        <h1 id="sub-title">☕ Caffeine Daily Limit ☕</h1>
 
         <hr>
 
@@ -69,6 +63,7 @@
         <h2 id="caffeine-questions">What is your caffeine sensitivity?</h2>
 
         <section class="sensitivity-to-caffeine">
+          <!-- Radio button for user to select caffeine sensitivity -->
           <input type="radio" id="more-sensitive" name="Sensitivity" value="moreSensitive">
           <label for="more-sensitive">More Sensitive</label>
   
@@ -87,6 +82,7 @@
         </section>
 
         <section class="result-section" id="caffeine-results">
+          <!-- Display results -->
           <h2>Your caffeine daily limit is approximately</h2>
           <div id="result-box">0 mg</div>
           <h2>which is equivalent to</h2>
@@ -96,7 +92,6 @@
       </div>
 
       <div class="right-container">
-
       </div>
     </div>
 
@@ -107,9 +102,9 @@
       </div>
     </footer>
 
-  <!-- External JavaScript -->
-  <script src="script.js"></script>
+    <!-- External JavaScript -->
+     <script src="script.js"></script>
 
-</body>
-
+  </body>
+  
 </html>
